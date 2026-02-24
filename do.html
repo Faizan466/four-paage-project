@@ -1,0 +1,155 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Featured Work</title>
+
+<style>
+
+body{
+  margin:0;
+  background:#0b0b0b;
+  font-family:Arial, sans-serif;
+  color:white;
+}
+
+/* SECTION */
+.section{
+  position:relative;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  padding:0 8%;
+  overflow:hidden;
+}
+
+/* Background Glow Effect */
+.section::before{
+  content:"";
+  position:absolute;
+  width:600px;
+  height:600px;
+  background:radial-gradient(circle, rgba(255,255,255,0.15), transparent 70%);
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  filter:blur(80px);
+  z-index:0;
+}
+
+/* Main Layout */
+.container{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:relative;
+  z-index:2;
+}
+
+/* LEFT SIDE */
+.left{
+  width:25%;
+}
+
+.left small{
+  opacity:0.5;
+}
+
+.left h1{
+  font-size:60px;
+  margin-top:20px;
+}
+
+/* CENTER IMAGE */
+.center{
+  width:40%;
+  display:flex;
+  justify-content:center;
+}
+
+.image-card{
+  position:relative;
+  border-radius:30px;
+  overflow:hidden;
+  box-shadow:0 40px 100px rgba(0,0,0,0.8);
+  background:#111;
+}
+
+.image-card img{
+  width:100%;
+  display:block;
+  border-radius:30px;
+}
+
+/* RIGHT SIDE */
+.right{
+  width:20%;
+  line-height:1.9;
+}
+
+.right h4{
+  opacity:0.4;
+  margin-bottom:5px;
+  font-weight:400;
+}
+
+.right p{
+  margin-bottom:25px;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+  .container{
+    flex-direction:column;
+    gap:50px;
+    text-align:center;
+  }
+
+  .left,.center,.right{
+    width:100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="left">
+      <small>01 / 03</small>
+      <h1>Archin</h1>
+    </div>
+
+    <div class="center">
+      <div class="image-card">
+        <img src="images/section-six-first-img.avif" alt="">
+      </div>
+    </div>
+
+    <div class="right">
+      <h4>Year</h4>
+      <p>2025</p>
+
+      <h4>Role</h4>
+      <p>Lead Designer</p>
+
+      <h4>Services</h4>
+      <p>
+        Website Design<br>
+        Product Design<br>
+        Branding<br>
+        Development
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>

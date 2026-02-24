@@ -1,0 +1,100 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.pin > p {
+  font-size: 18px;
+  width: 600px;
+}
+:root {
+  --section-color: #dcdcdc;
+  --label-icon: #61c554;
+  --label-bgc: #353535;
+  --font-color-1: #f3f3f3;
+  /* --font-color-2: #6e6e6e; */
+  --font-color-2: #353535;
+  --logo-color: #ff4d00;
+  --section-bgc: #bdbdbd;
+}
+.blog-section-two {
+  background-color: #dcdcdc;
+}
+.section-blog-contant {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  margin: auto;
+  width: 97vw;
+}
+.section-blog-contant > div {
+  width: 100%;
+  /* height: 800px; */
+  /* background: #ff4d00; */
+}
+.section-blog-contant > div > img {
+  width: 100%;
+  height: 600px;
+  border-radius: 50px;
+}
+.section-blog-contant-area {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 30px auto;
+}
+/* .section-blog-contant-area-one {
+} */
+.section-blog-contant-area-one-first-p {
+  font-size: 20px;
+  color: var(--label-bgc);
+}
+.section-blog-contant-area-one-second-p {
+  color: var(--font-color-2);
+  font-size: 17px;
+  margin: 6px 0;
+  font-weight: 400;
+}
+.last-section {
+  background: url(images/section-last-img.avif);
+  width: 97vw;
+  height: 120vh;
+  background-size: cover;
+  margin: auto;
+  background-repeat: no-repeat;
+  border-radius: 35px;
+}
+.last-section-inner-data {
+  width: 60%;
+  height: 300px;
+  /* background-color: #ff4d00; */
+  display: flex;
+  justify-content: space-around;
+}
+.last-section-inner-data-one > ul > li {
+  list-style: none;
+  font-size: 25px;
+  color: var(--font-color-1);
+  margin-bottom: 12px;
+}
+.last-section-inner-data-one-firstp {
+  /* color: var(--section-bgc); */
+  color: var(--section-bgc);
+  margin-bottom: 16px;
+}
+.last-part-two {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  /* background-color: #ff4d00; */
+  justify-content: space-between;
+}
+.last-part-two p {
+  font-size: 16px;
+  color: var(--font-color-1);
+}
+.last-part-two p:nth-child(3) {
+  color: var(--logo-color);
+}
+.last-image img {
+  width: 95%;}
